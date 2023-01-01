@@ -1,0 +1,256 @@
+﻿:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #c8e9f0;
+    line-height: 1.4;
+}
+
+/****************************************/
+/*               HLAVIČKA               */
+/****************************************/
+
+.head1 {
+    display: flex;
+
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    overflow: hidden;
+}
+
+.head1 img {
+    height: 150px;
+    margin: 0;
+}
+
+.head1 h2 {
+    margin: auto 10px auto 50px;
+}
+
+li {
+    font-size: 15px;
+    margin: auto;
+}
+
+
+
+/****************************************/
+/*                 TĚLO                 */
+/****************************************/
+
+main {
+    display: flex;
+}
+
+#mapa {
+    width: 100%;
+    height: calc(100vh - 150px);
+    border: 2px solid #80bce7;
+}
+
+    /* bodka */
+.smap img {
+    width: 40px;
+}
+
+.smap .layer-switch .item>div img {
+    height: 50px;
+    width: 65px;
+}
+
+
+
+/****************************************/
+/*                 KARTA                */
+/****************************************/
+
+/* karta */
+.smap .card {
+    padding: 16px 16px 0;
+}
+
+/* stylování hlavičky karty */
+.card-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* stylování těla karty */
+.card-body {
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* stylování záhlavý karty */
+.card-footer {
+    display: flex;
+    text-align: right;
+    margin: 8px auto;
+    justify-content: space-between;
+}
+
+.card-footer a {
+    text-decoration: none;
+}
+
+
+
+/****************************************/
+/*               MINIMAPA               */
+/****************************************/
+
+.miniMapa {
+    border: #808080 1px solid;
+    padding: 0;
+    overflow: hidden;
+    width: 162px;
+    height: 103px;
+    float: right;
+    background-image: none;
+}
+
+/* vnitřek minimapy */
+polygon {
+    stroke: red;
+}
+
+
+
+/****************************************/
+/*               SIDEBAR                */
+/****************************************/
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* postranní panel */
+.sidenav {
+    background-color: rgb(68, 136, 170);
+    opacity: 0.9;   /* průhlednost */ 
+    border-right: 2px solid #80bce7;
+    color: white;
+}
+
+.sidenav h2 {
+    margin: 0;
+    padding: 20px; 
+}
+
+.sidenav h3 {
+    padding: 10px;
+    text-align:center;
+}
+
+.seznam {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* vyhledávání v sidebaru */
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid black;
+}
+
+/* Menu v sidebaru */
+#myMenu {
+    list-style-type: none;  /* zrušení odrážek */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+  //  overflow-y: scroll;
+    height: calc(100vh - 175px);
+    width: 100%;
+}
+
+/* Řádky v sidebaru */
+#myMenu li {
+    padding: 8px;
+    width: 100%;
+    font-size: 25px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+}
+
+#myMenu li:hover {
+    color: black; 
+    background-color: #eee;
+    cursor: pointer;
+}  
+
+#myMenu a {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    header {
+        width: 80vw;
+    }
+
+    .head1 h2 {
+        margin: auto 10px;
+    }
+
+    .sidenav h2 {
+        font-size: 100%;
+    }
+
+    #mapa {
+        width: 100%;
+    }
+
+    }
+
+@media (max-width: 700px) {
+    
+    #mapa {
+
+    }
+        
+
+    footer {
+        font-size: 50%;
+    } 
+
+}
